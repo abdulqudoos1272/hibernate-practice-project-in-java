@@ -10,9 +10,9 @@ public class Student {
     private Long id;
     @Column(name = "Student_Name",nullable = false,length = 25)
     private String name;
-    @Column(name = "Student_Gender")
+    @Column(name = "Student_Gender",nullable = false)
     private String gender;
-    @Column(name = "Student_Age")
+    @Column(name = "Student_Age",nullable = false)
     private int age;
 
     public int getAge() {
@@ -45,5 +45,9 @@ public class Student {
 
     public void setName(String name) {
         this.name = name;
+    }
+    @Override
+    public String toString(){
+        return "Id  "+id+"  Name  "+name+"  Age  "+age+"  Gender  "+gender;
     }
 }

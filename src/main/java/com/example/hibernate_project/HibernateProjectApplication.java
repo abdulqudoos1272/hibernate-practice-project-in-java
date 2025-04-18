@@ -21,7 +21,6 @@ public class HibernateProjectApplication {
 				c1.AddCourse();
 				System.out.println(s1.Get_Students());
 				System.out.println(c1.Get_Courses());
-
 			};
 	}
 }

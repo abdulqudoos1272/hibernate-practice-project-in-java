@@ -24,6 +24,7 @@ public class StudentService {
         System.out.println("Enter Age");
         int age=sc.nextInt();
         s1.setAge(age);
+        sc.nextLine();
         System.out.println("Enter Gender");
         String gender=sc.nextLine();
         s1.setGender(gender);
