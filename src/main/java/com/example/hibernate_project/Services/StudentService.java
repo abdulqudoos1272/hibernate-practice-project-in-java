@@ -64,5 +64,11 @@ public class StudentService {
     public boolean Check(Long id){
         return studentRepositories.existsById(id);
     }
+    public int update(Long id,String gen){
+        return studentRepositories.updateStudentGender(id,gen);
+    }
+    public int Del(Long id){
+        return studentRepositories.Delete(id);
+    }
 };
 
